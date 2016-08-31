@@ -78,7 +78,7 @@ PImage genFace(Face f, Function[] rgbFunc) {
 					rgb = getRGBValues(rgbFunc, new int[] {i,j,0});
 					break;
 				case BACK:
-					rgb = getRGBValues(rgbFunc, new int[] {i,j,WDITH});
+					rgb = getRGBValues(rgbFunc, new int[] {i,j,WIDTH});
 					break;
 				case TOP:
 					rgb = getRGBValues(rgbFunc, new int[] {j,0,i});
@@ -103,7 +103,7 @@ float[] getRGBValues(Function[] rgbFunc, int[] xyz) {
 	float d = map(xyz[0], 0, WIDTH, -1, 1);
 	float e = map(xyz[1], 0, WIDTH, -1, 1);
 	float f = map(xyz[2], 0, WIDTH, -1, 1);
-	
+
 	float r = map(rgbFunc[0].eval(d, e, f), -1, 1, 0, 255);
 	float g = map(rgbFunc[1].eval(d, e, f), -1, 1, 0, 255);
 	float b = map(rgbFunc[2].eval(d, e, f), -1, 1, 0, 255);
@@ -124,7 +124,7 @@ void draw() {
 void TexturedCube(PImage[] pix) {
 	beginShape(QUADS);
 	texture(pix[0]);
-	// +Z "front" face 
+	// +Z "front" face
 	vertex(-1, -1, 1, 0, 0);
 	vertex(1, -1, 1, 1, 0);
 	vertex(1, 1, 1, 1, 1);
@@ -133,7 +133,7 @@ void TexturedCube(PImage[] pix) {
 
 	beginShape(QUADS);
 	texture(pix[1]);
-	// -Z "back" face 
+	// -Z "back" face
 	vertex(-1, -1, -1, 0, 0);
 	vertex(1, -1, -1, 1, 0);
 	vertex(1, 1, -1, 1, 1);
@@ -142,7 +142,7 @@ void TexturedCube(PImage[] pix) {
 
 	beginShape(QUADS);
 	texture(pix[2]);
-	// +Y "bottom" face 
+	// +Y "bottom" face
 	vertex(-1, 1, 1, 0, 0);
 	vertex(-1, 1, -1, 1, 0);
 	vertex(1, 1, -1, 1, 1);
@@ -151,7 +151,7 @@ void TexturedCube(PImage[] pix) {
 
 	beginShape(QUADS);
 	texture(pix[3]);
-	// -Y "top" face 
+	// -Y "top" face
 	vertex(-1, -1, 1, 0, 0);
 	vertex(-1, -1, -1, 1, 0);
 	vertex(1, -1, -1, 1, 1);
@@ -160,7 +160,7 @@ void TexturedCube(PImage[] pix) {
 
 	beginShape(QUADS);
 	texture(pix[4]);
-	// +X "right" face 
+	// +X "right" face
 	vertex(1, -1, 1, 0, 0);
 	vertex(1, -1, -1, 1, 0);
 	vertex(1, 1, -1, 1, 1);
@@ -169,7 +169,7 @@ void TexturedCube(PImage[] pix) {
 
 	beginShape(QUADS);
 	texture(pix[5]);
-	// -X "left" face 
+	// -X "left" face
 	vertex(-1, -1, 1, 0, 0);
 	vertex(-1, -1, -1, 1, 0);
 	vertex(-1, 1, -1, 1, 1);

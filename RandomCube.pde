@@ -1,4 +1,5 @@
-/* @pjs preload="/files/RandomCube/1/side0.jpg,/files/RandomCube/1/side1.jpg,/files/RandomCube/1/side2.jpg,/files/RandomCube/1/side3.jpg,/files/RandomCube/1/side4.jpg,/files/RandomCube/1/side5.jpg,
+/* @pjs preload="
+/files/RandomCube/1/side0.jpg,/files/RandomCube/1/side1.jpg,/files/RandomCube/1/side2.jpg,/files/RandomCube/1/side3.jpg,/files/RandomCube/1/side4.jpg,/files/RandomCube/1/side5.jpg,
 /files/RandomCube/2/side0.jpg,/files/RandomCube/2/side1.jpg,/files/RandomCube/2/side2.jpg,/files/RandomCube/2/side3.jpg,/files/RandomCube/2/side4.jpg,/files/RandomCube/2/side5.jpg,
 /files/RandomCube/3/side0.jpg,/files/RandomCube/3/side1.jpg,/files/RandomCube/3/side2.jpg,/files/RandomCube/3/side3.jpg,/files/RandomCube/3/side4.jpg,/files/RandomCube/3/side5.jpg,
 /files/RandomCube/4/side0.jpg,/files/RandomCube/4/side1.jpg,/files/RandomCube/4/side2.jpg,/files/RandomCube/4/side3.jpg,/files/RandomCube/4/side4.jpg,/files/RandomCube/4/side5.jpg,
@@ -41,7 +42,7 @@ void setComplexity(int complexity) {
   level = complexity;
   pix = new PImage[6];
   for(int i = 0; i < 6; i++) {
-    pix[i] = loadImage(level + "/side" + i + ".jpg");
+    pix[i] = loadImage("/files/RandomCube/" + level + "/side" + i + ".jpg");
   }
 }
 
