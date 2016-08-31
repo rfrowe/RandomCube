@@ -1,12 +1,12 @@
-/* @pjs preload="1/side0.jpg,1/side1.jpg,1/side2.jpg,1/side3.jpg,1/side4.jpg,1/side5.jpg,
-2/side0.jpg,2/side1.jpg,2/side2.jpg,2/side3.jpg,2/side4.jpg,2/side5.jpg,
-3/side0.jpg,3/side1.jpg,3/side2.jpg,3/side3.jpg,3/side4.jpg,3/side5.jpg,
-4/side0.jpg,4/side1.jpg,4/side2.jpg,4/side3.jpg,4/side4.jpg,4/side5.jpg,
-5/side0.jpg,5/side1.jpg,5/side2.jpg,5/side3.jpg,5/side4.jpg,5/side5.jpg,
-6/side0.jpg,6/side1.jpg,6/side2.jpg,6/side3.jpg,6/side4.jpg,6/side5.jpg,
-7/side0.jpg,7/side1.jpg,7/side2.jpg,7/side3.jpg,7/side4.jpg,7/side5.jpg,
-8/side0.jpg,8/side1.jpg,8/side2.jpg,8/side3.jpg,8/side4.jpg,8/side5.jpg,
-9/side0.jpg,9/side1.jpg,9/side2.jpg,9/side3.jpg,9/side4.jpg,9/side5.jpg"; */
+/* @pjs preload="/files/RandomCube/1/side0.jpg,/files/RandomCube/1/side1.jpg,/files/RandomCube/1/side2.jpg,/files/RandomCube/1/side3.jpg,/files/RandomCube/1/side4.jpg,/files/RandomCube/1/side5.jpg,
+/files/RandomCube/2/side0.jpg,/files/RandomCube/2/side1.jpg,/files/RandomCube/2/side2.jpg,/files/RandomCube/2/side3.jpg,/files/RandomCube/2/side4.jpg,/files/RandomCube/2/side5.jpg,
+/files/RandomCube/3/side0.jpg,/files/RandomCube/3/side1.jpg,/files/RandomCube/3/side2.jpg,/files/RandomCube/3/side3.jpg,/files/RandomCube/3/side4.jpg,/files/RandomCube/3/side5.jpg,
+/files/RandomCube/4/side0.jpg,/files/RandomCube/4/side1.jpg,/files/RandomCube/4/side2.jpg,/files/RandomCube/4/side3.jpg,/files/RandomCube/4/side4.jpg,/files/RandomCube/4/side5.jpg,
+/files/RandomCube/5/side0.jpg,/files/RandomCube/5/side1.jpg,/files/RandomCube/5/side2.jpg,/files/RandomCube/5/side3.jpg,/files/RandomCube/5/side4.jpg,/files/RandomCube/5/side5.jpg,
+/files/RandomCube/6/side0.jpg,/files/RandomCube/6/side1.jpg,/files/RandomCube/6/side2.jpg,/files/RandomCube/6/side3.jpg,/files/RandomCube/6/side4.jpg,/files/RandomCube/6/side5.jpg,
+/files/RandomCube/7/side0.jpg,/files/RandomCube/7/side1.jpg,/files/RandomCube/7/side2.jpg,/files/RandomCube/7/side3.jpg,/files/RandomCube/7/side4.jpg,/files/RandomCube/7/side5.jpg,
+/files/RandomCube/8/side0.jpg,/files/RandomCube/8/side1.jpg,/files/RandomCube/8/side2.jpg,/files/RandomCube/8/side3.jpg,/files/RandomCube/8/side4.jpg,/files/RandomCube/8/side5.jpg,
+/files/RandomCube/9/side0.jpg,/files/RandomCube/9/side1.jpg,/files/RandomCube/9/side2.jpg,/files/RandomCube/9/side3.jpg,/files/RandomCube/9/side4.jpg,/files/RandomCube/9/side5.jpg"; */
 
 
 PImage[] pix = new PImage[6];
