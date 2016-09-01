@@ -18,19 +18,12 @@ int level;
 int r, b, g;
 int pTouchX = 0;
 int pTouchY = 0;
-int wid = screen.width;
-int hig = screen.height;
 float rate = 0.01;
 
 void setup() {
   level = 1;
   setComplexity(level);
-  if(wid < 768 && hig < 768) {
-  	size(0.8 * Math.min(wid, hig),0.8 * Math.min(wid, hig), P3D);
-  }
-  else {
-  	size(500, 500, P3D);
-  }
+  size(500, 500, P3D);
   textureMode(NORMAL);
   String rgb = $("canvas").css("background-color");
   r = parseInt(rgb.substring(rgb.indexOf("(") + 1, rgb.indexOf(",")));
@@ -56,11 +49,8 @@ void draw() {
   translate(width/2.0, height/2.0, -100);
   rotateX(rotx);
   rotateY(roty);
-  if(wid < 768 && hig < 768) {
-  	scale(160 - (768 - Math.min(wid, hig)) * 0.19531);
-  } else {
-  	scale(160);
-  }
+  scale(160);
+
   TexturedCube(pix);
   fill(255,255,255);
 }
